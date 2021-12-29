@@ -33,6 +33,7 @@ function validateCash(){
       table.style.display="none";
     } else{
         table.style.display="block";
+        message.style.display = "none";
         const amountReturned = cashGiven.value - billAmount.value;
         calculateChange(amountReturned);
     }
