@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,31 +8,37 @@
     <title>Cash Register Manager</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <h1 class="heading">Cash Register Manager</h1>
-        <p class="description">Enter the bill amount and the cash paid by the customer and know minimum notes to be returned back.</p>
+        <p class="description">Enter the bill amount and the cash paid by the customer and know minimum notes to be
+            returned back.</p>
+
         <label for="bill-amount">Bill amount:</label>
-        <input type="text"  id="bill-amount">
-        <button>Next</button>
-        <label for="cash-given">Cash given:</label>
-        <input type="text" name="" id="cash-given">
-        <button id="check">check</button>
-        <p class="error-message"></p>
-        <table class="change-table">
+        <input type="text" id="bill-amount">
+        <button class="btn-next">Next</button>
+        <p class="error-message-next"></p>
+        <div id="cash">
+            <label for="cash-given">Cash given:</label>
+            <input type="text" name="" id="cash-given">
+            <button id="check">check</button>
+            <p class="error-message-check"></p>
+        </div>
+        <table id="table" class="change-table">
             <caption>Return change</caption>
             <tr>
                 <th>No. of Notes</th>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                
+                <td class="no-of-notes">0</td>
+                <td class="no-of-notes">0</td>
+                <td class="no-of-notes">0</td>
+                <td class="no-of-notes">0</td>
+                <td class="no-of-notes">0</td>
+                <td class="no-of-notes">0</td>
+                <td class="no-of-notes">0</td>
+                <td class="no-of-notes">0</td>
+                <td class="no-of-notes">0</td>
+
             </tr>
             <tr>
                 <th>Notes</th>
@@ -49,4 +56,5 @@
     </div>
     <script src="index.js"></script>
 </body>
+
 </html>
