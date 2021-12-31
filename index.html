@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cash Register Manager</title>
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,18 +17,19 @@
         <p class="description">Enter the bill amount and the cash paid by the customer and know minimum notes to be
             returned back.</p>
 
-        <label for="bill-amount">Bill amount:</label>
-        <input type="text" id="bill-amount">
-        <button class="btn-next">Next</button>
+        <label class="label bold bill-label" for="bill-amount">Bill amount:</label>
+        <input type="number" id="bill-amount">
+        <button class="btn btn-next">Next</button>
         <p class="error-message-next"></p>
         <div id="cash">
-            <label for="cash-given">Cash given:</label>
-            <input type="text" name="" id="cash-given">
-            <button id="check">check</button>
+            <label class="label label-cash bold" for="cash-given">Cash given:</label>
+            <input type="number" id="cash-given">
+            <button class="btn btn-check" id="check">check</button>
             <p class="error-message-check"></p>
         </div>
+   
         <table id="table" class="change-table">
-            <caption>Return change</caption>
+            <caption class="bold">Return change</caption>
             <tr>
                 <th>No. of Notes</th>
                 <td class="no-of-notes">0</td>
@@ -54,7 +57,7 @@
             </tr>
         </table>
     </div>
-    <script src="index.js"></script>
+    
 </body>
-
+<script src="index.js"></script>
 </html>

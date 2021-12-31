@@ -1,5 +1,6 @@
 const billAmount = document.querySelector("#bill-amount");
-const cashGiven = document.querySelector("#cash-given");
+// const cashGiven = document.querySelector("#cash-given");
+const cashGiven = document.getElementById("cash-given");
 const button = document.querySelector("#check");
 const buttonNext = document.querySelector(".btn-next");
 const divCash = document.querySelector("#cash");
@@ -32,6 +33,7 @@ function validateCash(){
       message.innerHTML = "Cash given should be more than bill amount"; 
       table.style.display="none";
     } else{
+        console.log(cashGiven.value, billAmount.value);
         table.style.display="block";
         message.style.display = "none";
         const amountReturned = cashGiven.value - billAmount.value;
