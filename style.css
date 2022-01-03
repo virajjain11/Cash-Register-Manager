@@ -25,21 +25,28 @@ body{
     /* align-items: center; */
     /* justify-content: center; */
 }
+/* .grid{
+    border: 2px solid black;
+    height: 80vh;
+    padding: 1rem;
+    width: 40vw;
+} */
 
 /* heading */
 .heading{
-    margin-top: 3rem;
+    margin: 1rem 0;
     font-size: 40px;
-    /* color: var(--primary-clr); */
 }
 .description{
     font-size: 20px;
+    margin: 0;
 }
 input {
     background-color:var(--background) ;
   }
 .bold{
     font-weight: bold;
+    font-size: 22px;
 }
 
 
@@ -47,15 +54,29 @@ input {
 .btn{
     display: block;
     background-color: var(--border);
+    transition-duration: 0.4s;
+    padding: .8rem;
+    margin: .5rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+}
+.btn:hover{
+    background-color: var(--secondary-clr);
+  color: var(--background);
+  cursor: pointer;
 }
 .label{
     display: block;
 }
 table {
     border-collapse: collapse;
+    margin-bottom: 2rem;
 }
 th, td {
     border: 1px solid 
     #1e293b;
     padding:8px;
 }
+
+
